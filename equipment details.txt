@@ -1,0 +1,28 @@
+
+import hid
+
+# Enumerate all connected HID devices
+devices = hid.enumerate()
+
+for device in devices:
+    print(f"Vendor ID: {device['vendor_id']}, Product ID: {device['product_id']}, Manufacturer: {device.get('manufacturer_string')}, Product: {device.get('product_string')}")
+
+/Users/selvababuarikaran/Documents/Automation/Relay_Interface/.venv/bin/python /Users/selvababuarikaran/Documents/Automation/Relay_Interface/main.py
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+Vendor ID: 0, Product ID: 0, Manufacturer: Apple, Product:
+Vendor ID: 0, Product ID: 0, Manufacturer: Apple, Product:
+Vendor ID: 0, Product ID: 0, Manufacturer: APPL, Product: BTM
+Vendor ID: 5824, Product ID: 1503, Manufacturer: www.dcttech.com, Product: USBRelay1
+Vendor ID: 0, Product ID: 0, Manufacturer: Apple, Product: Headset
+Vendor ID: 1452, Product ID: 641, Manufacturer: , Product: Keyboard Backlight
+Vendor ID: 1452, Product ID: 641, Manufacturer: Apple Inc., Product: Apple Internal Keyboard / Trackpad
+
+Process finished with exit code 0
